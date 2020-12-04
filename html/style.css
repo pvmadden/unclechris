@@ -1,9 +1,13 @@
+
+
+
+
 h1 {
 	text-align: center;
 	color: white;
-	font-family: 'Comic Sans MS', cursive;
+	font-family: Courier, monospace;
 	font-weight: 600;
-	letter-spacing: 10px;
+	letter-spacing: 5px;
 	text-shadow: 2px 6px black;
 	
 }
@@ -11,18 +15,149 @@ h1 {
 h2 {
 	text-align: center;
 	color: white;
-	font-family: 'Comic Sans MS', cursive;
+	font-family: Courier, monospace;
 	font-weight: 100;
 	}
 
 body {
-	background-color: red;
+	background-color: #196445;
 	animation: mymove 5s infinite;
 }
 
-@keyframes mymove {
-  from {background-color: red;}
-  to {background-color: blue;}
+
+/* TITLE */
+
+.uncle-chris {
+	font-size: 50px;
+	font-family: Courier, monospace;
+	text-align: center;
 }
+
+span {
+	display: inline-block;
+	font-weight: bolder;
+	animation: mover 6s linear infinite;
+	color: #196445;
+}
+
+@keyframes mover {
+	0%{
+		text-shadow: 0 0 30px rgba(0,0,0,0);
 	}
-	
+	50%{
+		text-shadow: 0 0 30px rgba(0,0,0,1);
+		transform: translateY(20px)
+	}
+	100%{
+		text-shadow: 0 0 30px rgba(0,0,0,0);
+		}
+}
+
+span:nth-child(1)
+{
+	animation-delay: 0.5s;
+}
+span:nth-child(2)
+{
+	animation-delay: 1s;
+}
+span:nth-child(3)
+{
+	animation-delay: 1.5s;
+}
+span:nth-child(4)
+{
+	animation-delay: 1.5s;
+}
+span:nth-child(5)
+{
+	animation-delay: 2s;
+}
+span:nth-child(6)
+{
+	animation-delay: 2.5s;
+}
+span:nth-child(7)
+{
+	animation-delay: 3s;
+}
+span:nth-child(8)
+{
+	animation-delay: 3.5s;
+}
+span:nth-child(9)
+{
+	animation-delay: 4s;
+}
+span:nth-child(10)
+{
+	animation-delay: 4.5s;
+}
+span:nth-child(11)
+{
+	animation-delay: 5s;
+}
+
+/* BUTTONS */
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: #9beb8d;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  font-family: Courier, monospace;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #196445; 
+  color: #9beb8d; 
+  border: 2px solid #4CAF50;
+  font-family: Courier, monospace;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 8px;
+  box-shadow: 0 5px #002c00;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: #196445;
+}
+
+.button1:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #002c00;
+  transform: translateY(4px);
+}
+
+.buttonactive {
+  background-color: #4CAF50; 
+  color: #196445; 
+  border: 2px solid #4CAF50;
+  font-family: Courier, monospace;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 8px;
+  box-shadow: 0 5px #002c00;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+}
+
